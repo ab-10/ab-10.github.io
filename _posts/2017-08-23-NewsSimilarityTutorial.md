@@ -1,4 +1,9 @@
-# Using TF—IDF and Cosine Similarity to Identify Similar News Articles in R-Programming
+---
+layout: post
+title: 'Using TF—IDF and Cosine Similarity to Identify Similar News Articles in R-Programming'
+date: 2017-10-01 23:32:00 +0000
+categories: Tutorials
+---
 
 _When trying to programmatically identify duplicate news articles, I had a hard time finding materials on the topic, so this guide attempts to fill the gap. In case you're interested in my thought process behind choosing the similarity measurements that I did, have a look at: [Dissecting News Through The Power of Text Mining](https://arminbagrat.com/dissecting-news-through-the-power-of-text-mining/)_
 
