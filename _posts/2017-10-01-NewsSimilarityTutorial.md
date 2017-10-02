@@ -81,5 +81,3 @@ titles2 = titles2[select2]
 ```
 
 So now you have two vectors, `titles1` and `titles2`, that contain corresponding duplicate titles (so `titles1[n]` and `titles[n]` are the duplicate title pairs).
-
-I hope this was helpful to your text mining. In case you have any questions or suggestions to this article, please leave a comment below and I'll do my best to reply.
