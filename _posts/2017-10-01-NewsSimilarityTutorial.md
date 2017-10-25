@@ -5,7 +5,7 @@ date: 2017-10-01 23:32:00 +0000
 categories: Tutorials
 ---
 
-_When trying to programmatically identify duplicate news articles, I had a hard time finding materials on the topic, so this guide attempts to fill the gap. In case you're interested in my thought process behind choosing the similarity measurements that I did, have a look at: [Dissecting News Through The Power of Text Mining](https://arminbagrat.com/NewsAnalysis/)_
+_When trying to programmatically identify duplicate news articles, I had a hard time finding materials on the topic, so this guide attempts to fill the gap. In case you're interested in my thought process behind choosing the similarity measurements that I did, have a look at: [Dissecting News Through The Power of Text Mining]({{ site.baseurl }}{% link 2017-08-23-NewsAnalysis.md %})_
 
 In this article I will use the [`tm library`](https://cran.r-project.org/web/packages/tm/index.html) in R, to create a similarity matrix between article titles and articles themselves. When such a matrix is created, I've found that specifying full text similarity thresholds for each title similarity level is the optimal approach. However the optimal thresholds depend on desired balance between eliminating duplicates and allowing unique articles through and thus should be adjusted by the reader based on their circumstances.
 
