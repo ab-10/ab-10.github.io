@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Dissecting News Through The Power of Text Mining"
+title: "Reflections on Finding News Similarities Through Text Mining"
 date: 2017-08-23 23:32:00 +0000
 categories: Reflections
 ---
