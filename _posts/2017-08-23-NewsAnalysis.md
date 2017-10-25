@@ -5,7 +5,7 @@ date: 2017-08-23 23:32:00 +0000
 categories: Reflections
 ---
 
-_In this post I explain in detail the thought process behind designing a program for detecting news covering the same event. In case you are interested in simply implementing the solution as fast as possible, head over to the [tutorial that I wrote]({{ site.baseurl }}{% link 2017-10-01-NewsSimilarityTutorial.md %}) and hopefuly give this post a read later on_
+_In this post I explain in detail the thought process behind designing a program for detecting news covering the same event. In case you are interested in simply implementing the solution as fast as possible, head over to the [tutorial that I wrote](https://arminbagrat.com/NewsSimilarityTutorial/) and hopefuly give this post a read later on_
 
 During my previous internship, I spent a lot of time searching and
 perfecting a language independent algorithm that would filter out news
