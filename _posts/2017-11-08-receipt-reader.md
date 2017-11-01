@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Hack: Put Your Receipt Where Your Money is!'
+title: 'Put Your Receipt Where Your Money is!'
 date: 2017-11-02
 categories: Projects
 ---
