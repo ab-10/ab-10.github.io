@@ -6,6 +6,6 @@ permalink: /me/
 
 ![](../ArminsEatingARaspberryPi.jpg)
 
-I mainly write in Python, R, Java, English and Latvian. I believe that there's a lot of overlap between writing prose and code, since both demand structured thought from the writer.
+I mainly write in Python, Java, English and Latvian. I believe that there's a lot of overlap between writing prose and code, since both demand structured thought from the writer.
 
-I currently work for [Bulkestate](https://bulkestate.com/en/) and study Computer Science in [The University of Manchester](http://www.manchester.ac.uk/).
+I currently research natural language processing models focused on discriminative attribute detection together with [Dr. Freitas](http://andrefreitas.org/) and study Computer Science in [The University of Manchester](http://www.manchester.ac.uk/).
