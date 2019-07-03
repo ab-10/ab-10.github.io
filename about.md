@@ -4,7 +4,7 @@ title: About Me
 permalink: /me/
 ---
 
-![](../ArminsEatingARaspberryPi.jpg)
+![](../arminsLookingProfessional.png)
 
 I mainly write in Python, Java, English and Latvian. I believe that there's a lot of overlap between writing prose and code, since both demand structured thought from the writer.
 
