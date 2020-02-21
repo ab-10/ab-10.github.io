@@ -18,7 +18,7 @@ author: Armin Bagrat Stepanjan
 description: > # this means to ignore newlines until "baseurl:"
     Existential thoughts of an aspiring software writer.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://ab-10.github.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://arminbagrat.com" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  ab-10
 permalink: /:title/
 # Build settings
