@@ -1,8 +1,20 @@
 title: De Dicto
-link: https://arminbagrat.com/dedicto
+link: https://arminbagrat.com/
 copyright: 2020 Armins Bagrats Stepanjans
-author: Armins Stepanjans
+author: Armins Bagrats Stepanjans
 description: Conversations with researchers exploring intelligence in its different forms.
 email: dedictopod@protonmail.ch
 category: Technology
 image: https://arminbagrat.com/assets/dedicto/dedicto.png
+type: audio/mpeg
+explicit: clean
+episodes:
+- title: Tracking COVID-19 Mutations with Emma Hodcroft
+  image: https://arminbagrat.com/assets/dedicto/dedicto.png
+  audio: https://ia801507.us.archive.org/33/items/dedicto-emmahodcroft/EmmaHodcroft.mp3
+  size: 105687319
+  duration: 2461
+  pubdate: Wed, 25 Mar 2020 10:00:00 GMT
+  number: 1
+  description: Emma Hodcroft discusses her research on applying data science to tracking Coronavirus (COVID-19) mutations. We discuss the implications of her analysis of governmental policies, medical solutions, and individual actions. We also discuss the biases present in the COVID-19 data and how they should be taken into account.
+
