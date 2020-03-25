@@ -4,9 +4,9 @@
 
 <channel>
 
-    <title>{{ data.dedicto.title }}</title>
+    <title>{{site.data.dedicto.title}}</title>
 
-    <link>{{ site.dedicto.podcast.title }} </link>
+    <link>#</link>
 
 <language>en-us</language>
 
