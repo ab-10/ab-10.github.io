@@ -4,7 +4,7 @@
 
 <channel>
 
-    <title>{{ site.dedicto.podcast.title }}</title>
+    <title>{{ data.dedicto.title }}</title>
 
     <link>{{ site.dedicto.podcast.title }} </link>
 
