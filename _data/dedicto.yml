@@ -18,3 +18,22 @@ episodes:
   number: 1
   description: Emma Hodcroft discusses her research on applying data science to tracking Coronavirus (COVID-19) mutations. We discuss the implications of her analysis of governmental policies, medical solutions, and individual actions. We also discuss the biases present in the COVID-19 data and how they should be taken into account.
 
+- title: Understanding Human Psychology Through Robots with Angelo Cangelosi
+  image: https://arminbagrat.com/assets/dedicto/Episode2ThumbSquare.png
+  audio: https://ia601505.us.archive.org/30/items/dedicto-angelocangelosi/AngeloCangelosi.mp3
+  size: 139930714
+  duration: 3498
+  pubdate: Thu, 2 Apr 2020 10:00:00 GMT
+  number: 2
+  description: Prof. Angelo Cangelosi discusses replicating baby learning patterns in robots, how a bug in the code resulted in psychology discovery, and why the elderly are fond of robots.
+
+- title: Perceiving Time with Devin Tehrune
+  image: https://arminbagrat.com/assets/dedicto/dedicto.png
+  audio: https://ia801502.us.archive.org/4/items/dedicto-devinterhune/DevinTerhune.mp3
+  size: 103974731
+  duration: 2599
+  pubdate: Sun, 26 Apr 2020 10:00:00 GMT
+  number: 3
+  description: In this episode of De Dicto, Dr Devin Terhune joins me to sketch the complexity of time perception and its implications to building artificial intelligence.
+
+
