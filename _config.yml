@@ -23,7 +23,7 @@ github_username:  ab-10
 permalink: /:title/
 # Build settings
 markdown: kramdown
-theme: minima
+theme: ronv/colorie
 plugins:
   - jekyll-feed
 
