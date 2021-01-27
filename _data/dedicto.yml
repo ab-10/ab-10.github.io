@@ -1,6 +1,6 @@
 title: De Dicto
 link: https://arminbagrat.com/
-copyright: 2020 Armins Bagrats Stepanjans
+copyright: 2021 Armins Bagrats Stepanjans
 author: Armins Bagrats Stepanjans
 description: Conversations with researchers exploring intelligence in its different forms.
 email: dedictopod@protonmail.com
@@ -36,4 +36,12 @@ episodes:
   number: 3
   description: In this episode of De Dicto, Dr Devin Terhune joins me to sketch the complexity of time perception and its implications to building artificial intelligence.
 
+- title: Towards automated fact checking with Andreas Vlachos
+  image: https://arminbagrat.com/assets/dedicto/dedicto.png
+  audio: https://ia801405.us.archive.org/27/items/dedicto_andreasvlachos/dedicto-andreasvlachos.mp3
+  size: 49619036
+  duration: 3101
+  pubdate: Wed, 27 Jan 2021 10:00:00 GMT
+  number: 4
+  description: Cambridge Natural Language and Information Processing group's senior lecturer describes existing work and future directions in automated fact checking.
 
