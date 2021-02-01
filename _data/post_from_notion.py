@@ -38,18 +38,19 @@ def main(zip):
     file_name = f'{date}-{file_title}.md'
     modified_file = Path('_posts')/file_name
 
-    # Prompt for assetdir name
-    asset_dir = click.prompt('How should I name asset dir for this post?', type=str)
-    asset_dir = Path('assets')/asset_dir
-    asset_dir.mkdir()
+    if assetdir:
+        # Prompt for assetdir name
+        asset_dir = click.prompt('How should I name asset dir for this post?', type=str)
+        asset_dir = Path('assets')/asset_dir
+        asset_dir.mkdir()
 
-    # Move assets from zip to assets/<asset_dir>
-    # and rename 
-    asset_map = {}
-    for i, asset in enumerate(assetdir.iterdir()):
-        new_loc = asset_dir/f'figure{i}{asset.suffix}'
-        shutil.move(str(asset), str(new_loc))
-        asset_map[asset.name] = new_loc
+        # Move assets from zip to assets/<asset_dir>
+        # and rename 
+        asset_map = {}
+        for i, asset in enumerate(assetdir.iterdir()):
+            new_loc = asset_dir/f'figure{i}{asset.suffix}'
+            shutil.move(str(asset), str(new_loc))
+            asset_map[asset.name] = new_loc
 
     with open(postname, 'r') as originalf:
         original_file = originalf.read()
