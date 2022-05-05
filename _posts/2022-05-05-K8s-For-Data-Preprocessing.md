@@ -4,10 +4,9 @@ title: "Preprocessing Data Science Experiments on K8s"
 draft: true
 categories: Tutorials
 ---
+K8s allows one to define and spin up hardware to suit whatever peculiar needs an experiment might have and destroy it as soon as we’re done using it. Additionally, if we want to perform multiple independent preprocessing steps, we can just spin up multiple K8s pods. Long gone the days of FOLVR (fear of leaving VM running)!
 
-K8s allows one to define and spin up hardware to suit whatever pecuilar needs an experiment might have and destroy it as soon as we're done using it. Additionally, if we want to perform multiple independent preprocessing steps, we can just spin up multiple K8s [pods](https://cloud.google.com/kubernetes-engine/docs/concepts/pod). Long gone the days of FOLVR (fear of leaving VM running)!
-
-As there's no free lunch, the computational flexibility of K8s comes at some cost. The setup is more elaborate than running a script on a VM and reruning experiments with modified code involves re-copying the code onto the pod.
+As there’s no free lunch, the computational flexibility of K8s comes at some cost. The setup is more elaborate than running a script on a VM and rerunning experiments with modified code involves re-copying the code onto the pod.
 
 # Create a Docker Image
 
@@ -27,7 +26,7 @@ A Docker image defines all the software that your experiment needs to run. If yo
 
 2. Find a base image on [Docker Hub](https://hub.docker.com/search?type=image&image_filter=official). To avoid installing the boilerplate stuff, select a Docker image that already has the main software your experiment will need. In this example, we'll use the [`python:3.8-buster`](https://hub.docker.com/_/python) image. `python:` indicates a namespace of all Python images, `3.8` the Python version, and `buster` the Debian version.
 
-    Now there are two ways of defining our own Docker image: programmatic and interactive. The former requires specifying all of our desired commands up front in a [Dockerfile](https://docs.docker.com/engine/reference/builder/) and then just running the Dockerfile to create a container with our desired software. The latter involves us attaching to the base image and installing the necessary dependencies for our experiments using bash terminal.
+    Now there are two ways of defining our own Docker image: programmatic and interactive. The former requires specifying all of our desired commands upfront in a [Dockerfile](https://docs.docker.com/engine/reference/builder/) and then just running the Dockerfile to create a container with our desired software. The latter involves us attaching to the base image and installing the necessary dependencies for our experiments using bash terminal.
 
     The programmatic approach is better suited for production deployments, as the Dockerfile can be easily modified in the future in light of changing requirements. 
 
@@ -35,12 +34,12 @@ A Docker image defines all the software that your experiment needs to run. If yo
 
 3. Attach to the Docker image:
 
-    _Will need `sudo` if you haven't [added your user to the `docker` group](https://docs.docker.com/engine/install/linux-postinstall/)_
+    _You will need `sudo` if you haven't [added your user to the `docker` group](https://docs.docker.com/engine/install/linux-postinstall/)_
 
     `docker run -it python:3.8-buster bash`
 
 
-    Replace `python:3.8-buster` with the base image of your choice (see previous step), the `-it` flag is used to run the container in the foreground, `bash` at the end of the command tells to Docker to run bash on our specified image.
+    Replace `python:3.8-buster` with the base image of your choice (see the previous step), the `-it` flag is used to run the container in the foreground, `bash` at the end of the command tells Docker to run bash on our specified image.
 
     If Docker can't find the specified image locally (as could be expected), it will just pull (i.e. download) it from Docker Hub.
 
@@ -70,14 +69,14 @@ Before a K8s pod can use our newly created Docker image, we need to make it avai
 
 1. Create a Docker repository:
 
-    `gcloud artifacts repositories create docker-repo-name --repository-format=docker \
+    `gcloud facts repositories create docker-repo-name --repository-format=docker \
     --location=us-central1 --description="Replace this with an appropriate description!"`
 
     `us-central1` should be set to whatever location you use for your GCP project.
 
     `docker-repo-name` should be replaced with the name you want to use for the repository.
 
-    Verify that the previous command was successful with `gcloud artifacts repositories list`.
+    Verify that the previous command was successful with `gcloud artefacts repositories list`.
 
 1. Configure Docker to use `gcloud` authentication:
 
@@ -114,11 +113,11 @@ Before a K8s pod can use our newly created Docker image, we need to make it avai
 
     It contains a lot of boilerplate configs, but there are a couple of details that are worth discussing.
 
-    Lines 8-10 specify that the current pod should attach to persistent storage (defined at the bottom of the file). We need persistent storage, as by default all data on a pod disapears after the pod dies. I use it for large files that might be necessary for preprocessing and for the final output of my preprocessing scripts.
+    Lines 8-10 specify that the current pod should attach to persistent storage (defined at the bottom of the file). We need persistent storage, as by default all data on a pod disappears after the pod dies. I use it for large files that might be necessary for preprocessing and for the final output of my preprocessing scripts.
 
-    You can access files that pod writes to persistent storage even after the pod has died, by reinstantiating the same pod or creating a new pod with access to the same volume.
+    You can access files that the pod writes to persistent storage even after the pod has died, by reinstantiating the same pod or creating a new pod with access to the same volume.
 
-    Line 22 defines the command that will be called on pod after instantiating, the pod will die after the command finishes. Calling `/bin/bash` allows to access the pod interactively. This can be replaced with a command to be exected directly, as long as it writes it's output to persistent storage.
+    Line 22 defines the command that will be called on the pod after instantiating, the pod will die after the command finishes. Calling `/bin/bash` allows to access the pod interactively. This can be replaced with a command to be exected directly, as long as it writes it's output to persistent storage.
 
     On line 24 `us-central1-docker.pkg.dev/your-project-name/docker-repo-name/your-img-name:0.1` should be the name you gave to the image in Artefact Registry.
 
