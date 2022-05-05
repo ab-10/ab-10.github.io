@@ -4,6 +4,7 @@ title: "Preprocessing Data Science Experiments on K8s"
 draft: true
 categories: Tutorials
 ---
+
 K8s allows one to define and spin up hardware to suit whatever peculiar needs an experiment might have and destroy it as soon as we’re done using it. Additionally, if we want to perform multiple independent preprocessing steps, we can just spin up multiple K8s pods. Long gone the days of FOLVR (fear of leaving VM running)!
 
 As there’s no free lunch, the computational flexibility of K8s comes at some cost. The setup is more elaborate than running a script on a VM and rerunning experiments with modified code involves re-copying the code onto the pod.
@@ -151,7 +152,7 @@ Before a K8s pod can use our newly created Docker image, we need to make it avai
 
     Start k9s by typing `k9s` in your terminal.
 
-    Type `:pods<enter>` to look for pods.
+    Type `:pods<enter>` to find pods.
 
     Navigate to the relevant pod using arrow keys (or j,k) and press enter.
 
