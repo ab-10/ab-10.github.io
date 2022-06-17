@@ -4,6 +4,9 @@ title: "Why hackers should read Sci-Fi?"
 categories: Prose
 ---
 
+![Two Hacks by George Stubbs](/assets/scifi-propoganda/two_hacks.jpg)
+_Two Hacks by George Stubbs, 1789_
+
 The stereotypical mental images of a hacker and a science-fiction nerd naturally overlap. Someone passionate about imagining future worlds is likely to be interested in the latest and greatest their world has to offer and vice-versa. Consequently, the abundance of sci-fi influence in the hacker subculture pushes many aspiring hackers to delve into fantasy worlds. For evidence, look no further than the heaps of Elon Musk fans flocking to the books of Isaac Asimov and Douglas Adams.
 
 Surprisingly, however, the flocking is no noob mistake the expert hackers even recommend it[^1]. Eric Raymond in *How to Become a Hacker* suggests sci-fi as one of the possible ways to gain additional style as a hacker: "Read science fiction. Go to science fiction conventions (a good way to meet hackers and proto-hackers)".
