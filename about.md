@@ -14,7 +14,7 @@ Before that, I was a NLP Research Engineer at an edtech startup, [Boclips](https
 There I was the second member of the data science team.
 I built a video recommendation system, improved search, and led the development of a demo deployment pipeline.
 
-I have obtained MPhil with distinction from University of Cambridge by building the first (GNN)[https://en.wikipedia.org/wiki/Graph_neural_network] for predicting edges in (DAGs)[https://en.wikipedia.org/wiki/Directed_acyclic_graph].
+I have obtained MPhil with distinction from University of Cambridge by building the first [GNN](https://en.wikipedia.org/wiki/Graph_neural_network) for predicting edges in [DAGs](https://en.wikipedia.org/wiki/Directed_acyclic_graph).
 I used it to create a multilingual model for finding the minimum number of prerequisites required for a human to learn a topic.
 I was supervised by [Ekaterina Kochmar](https://mbzuai.ac.ae/study/faculty/ekaterina-kochmar/) and highly recommend her as a supervisor if you're interested in working at the intersection of NLP and education.
 
