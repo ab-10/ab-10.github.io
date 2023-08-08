@@ -30,7 +30,7 @@ A list of works I've enjoyed.
 # Short writing
 
 1. [The Ones Who Walk Away from Omelas](https://en.wikipedia.org/wiki/The_Ones_Who_Walk_Away_from_Omelas)
-1. [A Mathematician's Lament](https://www.maa.org/sites/default/files/pdf/devlin/LockhartsLament.pdf)
+1. [A Mathematician's Lament](https://www.maa.org/sites/default/files/pdf/devlin/LockhartsLament.pdf) (particularly recommended to schoolchildren and their parents)
 1. [How to Think For Yourself](http://paulgraham.com/think.html) and [most](http://paulgraham.com/heresy.html) [other](http://paulgraham.com/nerds.html) [PG's essays](http://paulgraham.com/articles.html)
 1. [Sleeping Through the Technical Interview](https://xeiaso.net/blog/sleeping-the-technical-interview)
 1. [How Do Taoists Quit Smoking?](https://taylor.town/how-do-taoists-quit-smoking)
