@@ -38,3 +38,4 @@ A list of works I've enjoyed.
 1. [Password Rules Are Bullshit](https://blog.codinghorror.com/password-rules-are-bullshit/)
 1. [The correct response to uncertainty is *not* half-speed](https://www.lesswrong.com/posts/FMkQtPvzsriQAow5q/the-correct-response-to-uncertainty-is-not-half-speed)
 1. [Please Commit More Blatant Academic Fraud](https://jacobbuckman.com/2021-05-29-please-commit-more-blatant-academic-fraud/)
+1. [Donald Trump is a better storyteller than Ernest Hemingway](https://stevebryant.medium.com/donald-trump-is-a-better-writer-than-ernest-hemingway-74a8726e6439)
