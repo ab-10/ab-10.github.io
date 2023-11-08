@@ -31,4 +31,16 @@ So we've arrived at convergence of interests between employees and their corpora
 
 **Solution:** What can be done to mitigate and preserve interests of both parties.
 
+Frequently, people are hesitant to open source rough drafts of their work.
+Not because they contain important IP, but just because of how rough they are.
+
+The two reasons for not open sourcing should be distinguished.
+If it's the latter, then both employee and employer's incentives are aligned.
+
+In that case the solution is: unlisted open source.
+
+Unlisted open source:
+
+
+
 My thought process here, has been loosely inspired by the way Derek Sivers thinks about [owning your tech](https://sive.rs/ti)
