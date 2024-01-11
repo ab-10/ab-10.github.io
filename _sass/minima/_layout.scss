@@ -199,17 +199,35 @@
   }
 }
 
+
+.post-card {
+  display: flex;
+  flex-direction: row;
+  align: center;
+}
+
+.year-line {
+  letter-spacing: 0.09em;
+}
+
+.post-list-meta {
+  font-size: 0.7*$small-font-size;
+  color: $grey-color;
+  margin-right: 10px;
+  margin-top: 0.85em;
+  line-height: 1em;
+}
+
 .post-meta {
   font-size: $small-font-size;
   color: $grey-color;
 }
 
+
 .post-link {
   display: block;
   @include relative-font-size(1.5);
 }
-
-
 
 /**
  * Posts

@@ -14,13 +14,18 @@ layout: default
       {%- for post in site.posts -%}
         {% unless post.draft or post.hidden %}
         <li>
-          {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-          <span class="post-meta">{{ post.date | date: date_format }}</span>
-          <h3>
-            <a class="post-link" href="{{ post.url | relative_url }}">
-              {{ post.title | escape }}
-            </a>
-          </h3>
+          <post class="post-card">
+              <span class="post-list-meta">
+                <span class="date-line">{{ post.date | date: "%m/%d" }}</span>
+                <br />
+                <span class="year-line">{{ post.date | date: "%Y" }}</span>
+              </span>
+              <h3>
+              <a class="post-link" href="{{ post.url | relative_url }}">
+                {{ post.title | escape }}
+              </a>
+            </h3>
+          </post>
           {%- if site.show_excerpts -%}
             {{ post.excerpt }}
           {%- endif -%}
