@@ -35,23 +35,41 @@ Now every guest we invite has a probability of turning up to our dinner[^2].
 Conveniently, the expected value of our probabilistic dinner is the just the sum of individual guest probabilities.
 Let's set some rough probabilities:
 
-No: 0%
-Invited but not responded: 50%
-RSVP'ed: 80%
-Yourself: 100%
+| State | Probability |
+|--|--|
+|No:| 0% |
+|Invited but not responded: | 50% |
+|RSVP'ed: | 80% |
+
+TODO: mention in the example how I account for the maximum value of the guests.
 
 As you're going to apply this method further, you'll know what to expect of people and will become better at estimating the probabilities.
 But this should be a fine starting point.
 
-TODO: work through an example.
+Let's say I want to have a party of at least 5 people , I won't have room for more than 15 (myself included), and my perfect number of guests is 10.
+I'd start by sending out 14 invites.
+Right after sending the invites the expected number of guests is 7 = 14\*0.5.
 
-TODO: then show what actions one can take depending on their constraints and targets.
+Out of the 14 invited guests 5 RSVP and 9 respond with a flimsy excuse of why they can't make it.
+Now our new expected value of guests is 4 = 9\*0.0 + 5\*0.8.
+
+I send a second round of invites to 12 people, bringing my probabilistic dinner's expected value to 10.
+Get back 7 RSVPs and 5 noes.
+Now my expected value is 9.6 guests, which is sufficiently close to my goal of 10.
+I scale my risotto recipe for 9.6 guests and buy some bread, seeds, and olive oil for an [Italian dip](https://lifeloveandgoodfood.com/olive-oil-bread-dip/) in case more people attend.
+
+Out of the 12 RSVPs, 11 make it.
+
 
 Constraints: minimum no of people (otherwise it's not a party) and maximum no of people you can handle.
 
-Target value:
+Target value: the number of people you'd aim for.
 
 Some basic assumptions:
+
+1. You can send invitations to different guests at different times.
+1. If you invite a guest and they say "yes", you have to host them.
+1. If a guest says no at first and then follows you back, you're free to either say "yes" or "no".
 
 Probabilistic event:
 
