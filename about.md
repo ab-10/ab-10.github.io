@@ -4,11 +4,14 @@ title: About Me
 permalink: /me/
 ---
 
-![](../armin_on_santis.jpg)
+![](../armin_on_santis_small.jpg)
 
 Hi, my name is Armin Bagrat Stepanyan (different spellings are just vestigial indicator of Latvian rich case structure).
 
-I'm part of the current [Entrepreneur First](https://joinef.com) London cohort, where I'm looking for a cofounder by building things with them.
+I'm the cofounder of [cerebral.af](https://cerebral.af).
+There I'm building two things:
+1. Machine learning models for automating boring software engineering tasks in large codebases.
+2. A team that builds (1.).
 
 Before that, I was a NLP Research Engineer at an edtech startup, [Boclips](https://boclips.com).
 There I was the second member of the data science team.
