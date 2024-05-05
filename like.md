@@ -1,7 +1,8 @@
 ---
-layout: bookshelf
+layout: page
 title: Bookshelf
 permalink: /like/
+hide-title: true
 ---
 
 A list of works I've enjoyed.
