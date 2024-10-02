@@ -8,7 +8,7 @@ permalink: /me/
 
 Hi, my name is Armin Bagrat Stepanyan (different spellings are just vestigial indicator of Latvian rich case structure).
 
-I'm the cofounder of [cerebral.af](https://cerebral.af).
+I'm the cofounder of [recurse.ml](https://recurse.ml).
 There I'm building two things:
 1. Machine learning models for automating boring software engineering tasks in large codebases.
 2. A team that builds (1.).
