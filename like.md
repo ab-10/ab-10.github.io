@@ -11,7 +11,7 @@ A list of works I've enjoyed.
 
 1. [The Prize: The Epic Quest for Oil, Money, and Power](https://en.wikipedia.org/wiki/The_Prize:_The_Epic_Quest_for_Oil,_Money,_and_Power)
 1. [Chaos Monkeys](https://en.wikipedia.org/wiki/Chaos_Monkeys)
-1. [Infinite Yest](https://en.wikipedia.org/wiki/Infinite_Jest)
+1. [Infinite Jest](https://en.wikipedia.org/wiki/Infinite_Jest)
 1. [Deep Work](https://www.goodreads.com/book/show/25744928-deep-work)
 1. [The Master and Margarita](https://en.wikipedia.org/wiki/The_Master_and_Margarita)
 1. [Pnin](https://en.wikipedia.org/wiki/Pnin)
