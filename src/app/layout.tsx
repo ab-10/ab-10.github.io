@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     default: "Armin Bagrat Stepanyan",
     template: "%s | Armin Bagrat Stepanyan",
   },
-  description: "Language about language processing",
+  description: "sketches of the liminal space",
 };
 
 function Header() {
@@ -44,7 +44,7 @@ function Footer() {
             GitHub
           </a>
         </p>
-        <p className="mt-1">Language about language processing</p>
+        <p className="mt-1">sketches of the liminal space</p>
         <p className="mt-2">
           Click{" "}
           <Link href="/email" className="text-link hover:underline">

@@ -48,7 +48,7 @@ const rss = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Armin Bagrat Stepanyan</title>
-    <description>Language about language processing</description>
+    <description>sketches of the liminal space</description>
     <link>${SITE_URL}</link>
     <atom:link href="${SITE_URL}/feed.xml" rel="self" type="application/rss+xml"/>
     ${rssItems}
