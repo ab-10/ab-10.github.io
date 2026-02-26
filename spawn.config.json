@@ -1,0 +1,6 @@
+{
+  "project_name": "ab-10-migration",
+  "container_id": "5e879ede68d9efa499a4d9170824f7ac31d8ab4556d68365c9b57ba18fe544cb",
+  "container_name": "spawn-ab-10-migration",
+  "port": 3000
+}
