@@ -21,8 +21,8 @@ export default async function AboutPage() {
   const html = await renderMarkdown(fixedContent);
 
   return (
-    <article>
-      <h1 className="mb-6 text-2xl font-bold">About Me</h1>
+    <article className="content-page">
+      <h1 className="article-title">About Me</h1>
       <div className="prose" dangerouslySetInnerHTML={{ __html: html }} />
     </article>
   );

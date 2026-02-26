@@ -29,20 +29,19 @@ export default async function PostPage({ params }: Props) {
   }
 
   const date = new Date(post.date + "T00:00:00");
-  const formatted = date.toLocaleDateString("en-US", {
-    year: "numeric",
-    month: "short",
-    day: "numeric",
-  });
+  const month = String(date.getMonth() + 1).padStart(2, "0");
+  const day = String(date.getDate()).padStart(2, "0");
+  const year = date.getFullYear();
 
   return (
     <article>
-      <header className="mb-8">
-        <h1 className="text-2xl font-bold">{post.title}</h1>
-        <time className="text-sm text-muted" dateTime={post.date}>
-          {formatted}
-        </time>
-      </header>
+      <div className="article-header">
+        <h1 className="article-title">{post.title}</h1>
+        <p className="article-date">
+          {month}/{day} &nbsp;&middot;&nbsp; {year}
+        </p>
+        <div className="title-rule" />
+      </div>
       <div
         className="prose"
         dangerouslySetInnerHTML={{ __html: post.contentHtml }}
