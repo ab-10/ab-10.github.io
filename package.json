@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && node scripts/generate-feeds.mjs",
     "start": "next start",
     "lint": "eslint"
   },
@@ -12,7 +12,6 @@
     "gray-matter": "^4.0.3",
     "katex": "^0.16.33",
     "next": "16.1.6",
-    "playwright": "^1.58.2",
     "react": "19.2.3",
     "react-dom": "19.2.3",
     "rehype-highlight": "^7.0.2",
