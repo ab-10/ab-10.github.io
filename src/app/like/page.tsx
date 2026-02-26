@@ -16,7 +16,7 @@ export default async function BookshelfPage() {
   const html = await renderMarkdown(content);
 
   return (
-    <article>
+    <article className="content-page">
       <div className="prose" dangerouslySetInnerHTML={{ __html: html }} />
     </article>
   );

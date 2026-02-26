@@ -30,13 +30,15 @@ export default function EmailPage() {
 
   if (status === "success") {
     return (
-      <p>Success: a confirmation email has been sent to your email address.</p>
+      <div className="content-page">
+        <p>Success: a confirmation email has been sent to your email address.</p>
+      </div>
     );
   }
 
   return (
-    <article>
-      <h1 className="mb-2 text-2xl font-bold">
+    <article className="content-page">
+      <h1 className="article-title">
         New essays delivered straight to your inbox
       </h1>
       <p className="mb-6 text-muted">

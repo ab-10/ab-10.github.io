@@ -13,49 +13,46 @@ export const metadata: Metadata = {
 
 function Header() {
   return (
-    <header className="border-b border-border py-4">
-      <div className="mx-auto flex max-w-2xl items-center justify-between px-4">
-        <Link href="/" className="text-lg font-semibold text-foreground">
-          Armin Bagrat Stepanyan
-        </Link>
-        <nav className="flex gap-6 text-sm">
-          <Link href="/me" className="text-muted hover:text-foreground">
-            About Me
-          </Link>
-          <Link href="/like" className="text-muted hover:text-foreground">
-            Bookshelf
-          </Link>
-        </nav>
-      </div>
+    <header className="site-header">
+      <Link href="/" className="site-name">
+        Armin Bagrat Stepanyan
+      </Link>
+      <nav>
+        <ul className="site-nav">
+          <li>
+            <Link href="/me">About</Link>
+          </li>
+          <li>
+            <Link href="/like">Bookshelf</Link>
+          </li>
+        </ul>
+      </nav>
     </header>
   );
 }
 
 function Footer() {
   return (
-    <footer className="border-t border-border py-6 text-sm text-muted">
-      <div className="mx-auto max-w-2xl px-4">
-        <p>Armin Bagrat Stepanyan</p>
-        <p className="mt-1">
-          <a
-            href="https://github.com/ab-10"
-            className="hover:text-foreground"
-          >
-            GitHub
-          </a>
-        </p>
-        <p className="mt-1">sketches of the liminal space</p>
-        <p className="mt-2">
-          Click{" "}
-          <Link href="/email" className="text-link hover:underline">
-            here
-          </Link>{" "}
-          to get an email when I write something new. Yes, there&apos;s also an{" "}
-          <Link href="/feed.xml" className="text-link hover:underline">
-            RSS
-          </Link>{" "}
-          feed.
-        </p>
+    <footer className="site-footer">
+      <p className="footer-cta">
+        Click{" "}
+        <Link href="/email">
+          here
+        </Link>{" "}
+        to get an email when I write something new. Yes, there&apos;s also an{" "}
+        <Link href="/feed.xml">
+          RSS
+        </Link>{" "}
+        feed.
+      </p>
+      <div className="footer-top">
+        <span className="footer-tagline">sketches of the liminal space</span>
+        <span className="footer-sep">&middot;</span>
+        <a href="https://github.com/ab-10">GitHub</a>
+        <span className="footer-sep">&middot;</span>
+        <a href="https://bsky.app/profile/arminbagrat.com">Bluesky</a>
+        <span className="footer-sep">&middot;</span>
+        <a href="https://x.com/arminbagrat/">X</a>
       </div>
     </footer>
   );
@@ -69,6 +66,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400;1,9..144,500&family=Plus+Jakarta+Sans:wght@200..800&display=swap" rel="stylesheet" />
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
@@ -76,7 +76,7 @@ export default function RootLayout({
       <body className="antialiased">
         <GoogleAnalytics />
         <Header />
-        <main className="mx-auto max-w-2xl px-4 py-8">{children}</main>
+        <main>{children}</main>
         <Footer />
       </body>
     </html>
